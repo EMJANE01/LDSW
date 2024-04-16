@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../GitHub/La-primera-ventana/Mi primera ventana"
+		},
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../../../../xampp/htdocs/catalogo"
+		},
+		{
+			"path": "../../../../../../../../xampp/htdocs/catalogopel"
+		},
+		{
+			"path": "../../../../../TENDENCIAS ENTORNO DE DESARROLLO DE APSS/jest"
+		}
+	],
+	"settings": {
+		"dotnet.defaultSolution": "Mi primera ventana.sln"
+	}
+}
