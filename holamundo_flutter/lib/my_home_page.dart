@@ -5,7 +5,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Inicio'),
+        title: Text('Hello World'),
       ),
       body: Container(
         decoration: BoxDecoration(
