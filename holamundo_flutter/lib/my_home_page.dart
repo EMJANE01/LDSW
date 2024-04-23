@@ -5,49 +5,34 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Mi Página Principal'),
+        title: Text('Inicio'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              '¡Hola, mundo!',
-              style: TextStyle(fontSize: 24),
-            ),
-            SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.blue,
-                ),
-                SizedBox(width: 20),
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.green,
-                ),
-              ],
-            ),
-            SizedBox(height: 20),
-            Stack(
-              alignment: Alignment.center,
-              children: [
-                Container(
-                  width: 200,
-                  height: 200,
-                  color: Colors.yellow,
-                ),
-                Text(
-                  'Stacked Text',
-                  style: TextStyle(fontSize: 24),
-                ),
-              ],
-            ),
-          ],
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/fondoflutter.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                '¡Bienvenido a',
+                style: TextStyle(fontSize: 28, color: Colors.white),
+              ),
+              Text(
+                'My app :D',
+                style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white),
+              ),
+              SizedBox(height: 20),
+              Text(
+                'Desarrollado por: Jeanette Dotor',
+                style: TextStyle(fontSize: 18, color: Colors.white),
+              ),
+            ],
+          ),
         ),
       ),
     );
