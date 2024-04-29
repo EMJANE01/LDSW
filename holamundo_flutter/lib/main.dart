@@ -4,7 +4,7 @@ import 'conexiones.dart';
 import 'administracion_page.dart';
 import 'catalogo_page.dart';
 import 'detalle_pelicula_page.dart';
-// Importa las demás páginas aquí
+
 
 void main() {
   runApp(MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: InicioPage(), // Puedes cambiar esto según la página inicial que desees
+      home: InicioPage(), 
     );
   }
 }
