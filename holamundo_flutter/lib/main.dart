@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
-import 'inicio_page.dart';
-import 'conexiones.dart'; 
-import 'administracion_page.dart';
-import 'catalogo_page.dart';
-import 'detalle_pelicula_page.dart';
 
+import 'HomePage/HomePage.dart';
 
-void main() {
-  runApp(MyApp());
+void main (){
+  runApp(const MyApp());
 }
-
-class MyApp extends StatelessWidget {
+class MyApp extends StatelessWidget{
+  const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Catálogo de Películas',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: InicioPage(), 
-    );
+   return MaterialApp(
+    theme: ThemeData(
+      brightness: Brightness.dark,
+      useMaterial3: true,
+   ),
+    debugShowCheckedModeBanner: false,
+    title: 'flutter demo',
+    home: HomePage(),
+   );
   }
 }
