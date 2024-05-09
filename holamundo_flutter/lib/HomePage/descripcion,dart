@@ -1,0 +1,15 @@
+import 'package:flutter/material.dart';
+
+class MovieDetailsPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Detalles de las películas'),
+      ),
+      body: Center(
+        child: Text('Pantalla de Detalles de las Películas'),
+      ),
+    );
+  }
+}
